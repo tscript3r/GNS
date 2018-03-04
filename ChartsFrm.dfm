@@ -1,0 +1,157 @@
+object ChartsForm: TChartsForm
+  Left = 175
+  Top = 100
+  AutoSize = True
+  BorderStyle = bsToolWindow
+  Caption = 'ChartsForm'
+  ClientHeight = 561
+  ClientWidth = 1400
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Chart: TChart
+    Left = 0
+    Top = 0
+    Width = 1400
+    Height = 561
+    AnimatedZoom = True
+    BackWall.Brush.Color = clWhite
+    BackWall.Brush.Style = bsClear
+    BottomWall.Brush.Color = clWhite
+    BottomWall.Brush.Style = bsClear
+    Gradient.EndColor = clWhite
+    Gradient.StartColor = 16711808
+    LeftWall.Brush.Color = clWhite
+    LeftWall.Brush.Style = bsClear
+    LeftWall.Color = clWhite
+    Title.Text.Strings = (
+      'Stats')
+    Title.Visible = False
+    Chart3DPercent = 3
+    View3D = False
+    Color = clWhite
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+    object Series1: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Style = smsLabelPercent
+      Marks.Visible = False
+      SeriesColor = clRed
+      Title = 'Work hours'
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = True
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+    object Series2: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clGreen
+      Title = 'Tips'
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+    object Series3: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = 16711808
+      Title = 'Wallet'
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+    object Series4: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clBlue
+      Title = 'Pause'
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+  end
+  object CBWallet: TCheckBox
+    Left = 1280
+    Top = 456
+    Width = 90
+    Height = 17
+    Caption = 'Wallet'
+    Checked = True
+    State = cbChecked
+    TabOrder = 1
+    OnClick = CBWalletClick
+  end
+  object CBWorkHours: TCheckBox
+    Left = 1280
+    Top = 472
+    Width = 90
+    Height = 17
+    Caption = 'Work hours'
+    Checked = True
+    State = cbChecked
+    TabOrder = 2
+    OnClick = CBWorkHoursClick
+  end
+  object CBTips: TCheckBox
+    Left = 1280
+    Top = 488
+    Width = 90
+    Height = 17
+    Caption = 'Tips'
+    Checked = True
+    State = cbChecked
+    TabOrder = 3
+    OnClick = CBTipsClick
+  end
+  object CBPause: TCheckBox
+    Left = 1280
+    Top = 504
+    Width = 90
+    Height = 17
+    Caption = 'Pause'
+    Checked = True
+    State = cbChecked
+    TabOrder = 4
+    OnClick = CBPauseClick
+  end
+end
